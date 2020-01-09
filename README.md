@@ -21,7 +21,7 @@ jobs:
       uses: muratiger/invalidate-cloudfront-and-wait-for-completion-action@master
       env:
         DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
-        PATHS: '/index.html'
+        PATHS: '/*'
         AWS_REGION: 'us-east-1'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
